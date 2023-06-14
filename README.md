@@ -1,6 +1,6 @@
 # ROS Docker
 
-Docker containerization for developing ROS apps. This image is based on OSRF's ROS Docker image, but with tweaks to enable `cpk` and `mDNS`.
+Docker containerization for developing ROS apps. This image is based on `osrf/ros:noetic-desktop-full`, and with tweaks to enable `cpk` and `mDNS`.
 
 ## Build
 
