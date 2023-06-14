@@ -65,7 +65,7 @@ COPY ./*.cpk ./*.sh ${PROJECT_PATH}/
 COPY ./packages "${CPK_PROJECT_PATH}/packages"
 
 # build catkin workspace
-RUN catkin build \
+RUN . /opt/ros/${ROS_DISTRO}/setup.sh && catkin build \
     --workspace ${CPK_CODE_DIR}
 
 # install packages dependencies
