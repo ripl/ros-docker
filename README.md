@@ -5,9 +5,9 @@ Docker containerization for developing ROS apps. This image is based on `osrf/ro
 ## Build
 
     git clone git@github.com:ripl/ros-docker.git && cd ros-docker/
-    cpk decorate -m "Shengjie Lin" osrf/ros:noetic-desktop-full ripl/ros:noetic-desktop-full
+    cpk decorate -m RIPL osrf/ros:noetic-desktop-full ripl/ros:noetic-desktop-full
     cpk build
 
 ## Run
 
-    cpk run -c bash -X --net host -- -v /var/run/avahi-daemon/socket:/var/run/avahi-daemon/socket
+    cpk run -c bash -X --net host
