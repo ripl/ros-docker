@@ -50,6 +50,7 @@ COPY ./dependencies-apt.txt "${PROJECT_PATH}/"
 RUN cpk-apt-install ${PROJECT_PATH}/dependencies-apt.txt
 
 # install python3 dependencies
+RUN pip install -U pip
 COPY ./dependencies-py3.txt "${PROJECT_PATH}/"
 RUN cpk-pip3-install ${PROJECT_PATH}/dependencies-py3.txt
 
