@@ -7,9 +7,9 @@ Docker containerization for developing ROS apps. This image is based on [`ros:no
 ```bash
 # use local architecture
 ARCH=$(arch)
-if [ ARCH = x86_64 ]; then
+if [ ${ARCH} = x86_64 ]; then
     ARCH=amd64
-elif [ ARCH = aarch64 ]; then
+elif [ ${ARCH} = aarch64 ]; then
     ARCH=arm64v8
 else
     echo Unsupported architecture: ${ARCH}
