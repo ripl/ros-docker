@@ -25,7 +25,7 @@ ARCH=arm64v8
 ```bash
 git clone git@github.com:ripl/ros-docker.git && cd ros-docker/
 cpk decorate -a ${ARCH} -m RIPL ${ARCH}/ros:noetic-ros-base ripl/ros:noetic-ros-base
-cpk build -a ${ARCH} --push
+cpk build -a ${ARCH}
 ```
 
 ## Run
