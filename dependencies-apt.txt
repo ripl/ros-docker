@@ -1,4 +1,4 @@
 # LIST YOUR APT PACKAGES HERE
 
 libnss-mdns
-ros-noetic-desktop-full
+ros-${ROS_DISTRO}-desktop-full
