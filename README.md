@@ -6,6 +6,7 @@ Docker containerization for developing ROS apps. This image is based on [`ros:no
 
 ```bash
 cpk decorate -m RIPL ros:noetic-ros-base ripl/ros:noetic-ros-base
+git clone https://github.com/ripl/ros-docker.git && cd ros-docker/
 cpk build
 ```
 
